@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arG-Xd-Gve">
+                                <rect key="frame" x="276" y="127" width="48" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-dz-4JQ">
+                                <rect key="frame" x="258" y="500" width="84" height="30"/>
+                                <state key="normal" title="Share Photo"/>
+                                <connections>
+                                    <action selector="sharePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUb-Fd-0td"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYW-jk-mlf">
+                                <rect key="frame" x="285" y="76" width="30" height="30"/>
+                                <state key="normal" title="Log"/>
+                                <connections>
+                                    <action selector="logEmailButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5W-mS-vz9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dz-4JQ" secondAttribute="bottom" constant="70" id="HX7-er-mkp"/>
+                            <constraint firstItem="TYW-jk-mlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JvF-Z4-AJV"/>
+                            <constraint firstItem="arG-Xd-Gve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="174" id="OGM-Xf-ezF"/>
+                            <constraint firstItem="6S7-dz-4JQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qro-YZ-NdK"/>
+                            <constraint firstItem="arG-Xd-Gve" firstAttribute="top" secondItem="TYW-jk-mlf" secondAttribute="bottom" constant="21" id="SuL-nI-V6M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6S7-dz-4JQ" secondAttribute="trailing" constant="248" id="aO1-3K-ymo"/>
+                            <constraint firstItem="arG-Xd-Gve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dEz-Px-wHL"/>
+                            <constraint firstItem="TYW-jk-mlf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="ht0-bx-SbS"/>
+                            <constraint firstItem="6S7-dz-4JQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="228" id="huf-2w-mfU"/>
+                            <constraint firstItem="TYW-jk-mlf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="237" id="jOH-pm-gcT"/>
+                            <constraint firstItem="TYW-jk-mlf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="nCP-1J-HkK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TYW-jk-mlf" secondAttribute="trailing" constant="277" id="o3T-4S-iSp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="arG-Xd-Gve" secondAttribute="trailing" constant="214" id="z4z-eY-5s4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ht0-bx-SbS"/>
+                                <exclude reference="jOH-pm-gcT"/>
+                                <exclude reference="o3T-4S-iSp"/>
+                                <exclude reference="OGM-Xf-ezF"/>
+                                <exclude reference="z4z-eY-5s4"/>
+                                <exclude reference="aO1-3K-ymo"/>
+                                <exclude reference="huf-2w-mfU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="arG-Xd-Gve" id="Gss-Za-bqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="136"/>
+        </scene>
+    </scenes>
+</document>
